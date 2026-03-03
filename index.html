@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FlornHub – Advanced CCTV & Security Solutions</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- BACKGROUND -->
+<div class="bg-wrap">
+  <div class="bg-blob b1"></div>
+  <div class="bg-blob b2"></div>
+  <div class="bg-blob b3"></div>
+  <div class="bg-grid"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#" onclick="showPage('home')">
+      <div class="logo-svg">
+        <svg width="36" height="36" viewBox="0 0 38 38" fill="none">
+          <circle cx="19" cy="19" r="17" stroke="url(#lg1)" stroke-width="2.2"/>
+          <circle cx="19" cy="19" r="10" stroke="url(#lg1)" stroke-width="1.4" stroke-dasharray="3 2"/>
+          <circle cx="19" cy="19" r="4" fill="url(#lg1)"/>
+          <line x1="19" y1="2" x2="19" y2="8" stroke="url(#lg1)" stroke-width="2"/>
+          <line x1="36" y1="19" x2="30" y2="19" stroke="url(#lg1)" stroke-width="2"/>
+          <line x1="19" y1="36" x2="19" y2="30" stroke="url(#lg1)" stroke-width="2"/>
+          <line x1="2" y1="19" x2="8" y2="19" stroke="url(#lg1)" stroke-width="2"/>
+          <defs>
+            <linearGradient id="lg1" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#0057ff"/>
+              <stop offset="100%" stop-color="#00c6ff"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <span class="logo-text">Florn<span class="logo-hi">Hub</span></span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" onclick="showPage('home')"     data-page="home">Home</a></li>
+      <li><a href="#" onclick="showPage('about')"    data-page="about">About</a></li>
+      <li><a href="#" onclick="showPage('services')" data-page="services">Services</a></li>
+      <li><a href="#" onclick="showPage('products')" data-page="products">Products</a></li>
+      <li><a href="#" onclick="showPage('contact')"  data-page="contact">Contact</a></li>
+      <li><a href="#" onclick="showPage('faq')"      data-page="faq">FAQ</a></li>
+      <li><button class="btn-book-nav" onclick="openBookingModal()"><i class="fas fa-calendar-check"></i> Book Now</button></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGES -->
+<main id="app">
+
+<!-- HOME -->
+<section id="page-home" class="page active">
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-badge"><span class="badge-dot"></span> 24/7 Active Security Monitoring</div>
+      <h1 class="hero-title">Protect What<br><span class="grad-text">Matters Most</span></h1>
+      <p class="hero-sub">Next-generation CCTV installation &amp; intelligent security systems built for Filipino homes and businesses.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="openBookingModal()"><i class="fas fa-calendar-plus"></i> Book Free Consultation</button>
+        <button class="btn-glass" onclick="showPage('services')"><i class="fas fa-shield-alt"></i> Our Services</button>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><span class="cnt" data-target="500">0</span><sup>+</sup><small>Systems Installed</small></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><span class="cnt" data-target="98">0</span><sup>%</sup><small>Satisfaction Rate</small></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><span class="cnt" data-target="10">0</span><sup>+</sup><small>Years Experience</small></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="cam-orb">
+        <div class="orb-ring r1"></div>
+        <div class="orb-ring r2"></div>
+        <div class="orb-ring r3"></div>
+        <div class="cam-body glass-card">
+          <svg viewBox="0 0 120 80" fill="none" class="cam-svg">
+            <rect x="5" y="25" width="55" height="30" rx="6" fill="white" fill-opacity=".9" stroke="url(#cg)" stroke-width="2"/>
+            <polygon points="60,20 100,10 100,70 60,60" fill="white" fill-opacity=".7" stroke="url(#cg)" stroke-width="2"/>
+            <circle cx="30" cy="40" r="8" fill="#e8f4ff" stroke="url(#cg)" stroke-width="1.5"/>
+            <circle cx="30" cy="40" r="4" fill="url(#cg)" opacity=".9"/>
+            <circle cx="30" cy="40" r="2" fill="white"/>
+            <line x1="30" y1="55" x2="30" y2="70" stroke="url(#cg)" stroke-width="2"/>
+            <line x1="10" y1="70" x2="50" y2="70" stroke="url(#cg)" stroke-width="2"/>
+            <circle cx="97" cy="40" r="4" fill="url(#cg)" opacity=".7"/>
+            <rect x="2" y="35" width="6" height="10" rx="2" fill="url(#cg)" opacity=".8"/>
+            <defs>
+              <linearGradient id="cg" x1="0" y1="0" x2="120" y2="80" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#0057ff"/>
+                <stop offset="100%" stop-color="#00c6ff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="cam-scan"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feat-strip">
+    <div class="feat-pill glass-card"><i class="fas fa-video"></i><div><strong>4K Ultra HD</strong><small>Crystal clear footage</small></div></div>
+    <div class="feat-pill glass-card"><i class="fas fa-moon"></i><div><strong>Night Vision</strong><small>24/7 visibility</small></div></div>
+    <div class="feat-pill glass-card"><i class="fas fa-wifi"></i><div><strong>Remote Access</strong><small>Monitor anywhere</small></div></div>
+    <div class="feat-pill glass-card"><i class="fas fa-bell"></i><div><strong>Smart Alerts</strong><small>Instant notifications</small></div></div>
+  </div>
+
+  <div class="section">
+    <div class="sec-hd">
+      <span class="sec-tag">What We Do</span>
+      <h2>Security <span class="grad-text">Solutions</span></h2>
+      <p>Comprehensive protection tailored to every need</p>
+    </div>
+    <div class="cards4">
+      <div class="glass-card svc-card" onclick="showPage('services')">
+        <div class="svc-ico"><i class="fas fa-camera"></i></div>
+        <h3>CCTV Installation</h3>
+        <p>Professional installation of HD cameras for homes and businesses with custom layouts by our experts.</p>
+        <span class="card-arr">Learn More <i class="fas fa-arrow-right"></i></span>
+      </div>
+      <div class="glass-card svc-card" onclick="showPage('services')">
+        <div class="svc-ico"><i class="fas fa-server"></i></div>
+        <h3>NVR / DVR Systems</h3>
+        <p>Cloud-connected recorders with 30-day storage, remote playback, and AI-powered motion detection.</p>
+        <span class="card-arr">Learn More <i class="fas fa-arrow-right"></i></span>
+      </div>
+      <div class="glass-card svc-card" onclick="showPage('services')">
+        <div class="svc-ico"><i class="fas fa-fingerprint"></i></div>
+        <h3>Access Control</h3>
+        <p>Biometric and card-based systems. Control who enters your premises with precision.</p>
+        <span class="card-arr">Learn More <i class="fas fa-arrow-right"></i></span>
+      </div>
+      <div class="glass-card svc-card" onclick="showPage('services')">
+        <div class="svc-ico"><i class="fas fa-bell"></i></div>
+        <h3>Alarm Systems</h3>
+        <p>Integrated burglar alarms, smoke detectors, and emergency response with 24/7 monitoring.</p>
+        <span class="card-arr">Learn More <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="why-band">
+    <div class="section">
+      <div class="why-grid">
+        <div class="why-txt">
+          <span class="sec-tag">Why FlornHub</span>
+          <h2>Your Partners in <span class="grad-text">Security</span></h2>
+          <div class="why-list">
+            <div class="why-item glass-card"><div class="why-ico"><i class="fas fa-award"></i></div><div><strong>Certified Experts</strong><p>All technicians are professionals with background checks.</p></div></div>
+            <div class="why-item glass-card"><div class="why-ico"><i class="fas fa-tools"></i></div><div><strong>Premium Equipment</strong><p>We install only industry-leading brands with manufacturer warranties.</p></div></div>
+            <div class="why-item glass-card"><div class="why-ico"><i class="fas fa-headset"></i></div><div><strong>24/7 Support</strong><p>Round-the-clock technical support and emergency response team.</p></div></div>
+            <div class="why-item glass-card"><div class="why-ico"><i class="fas fa-shield-alt"></i></div><div><strong>Service Warranty</strong><p>All installations covered by our comprehensive service guarantee.</p></div></div>
+          </div>
+        </div>
+        <div class="glass-card monitor-wrap">
+          <div class="monitor-label"><i class="fas fa-circle live-dot"></i> LIVE FEED</div>
+          <div class="cam-mini-grid">
+            <div class="cam-cell"><span>CAM 01</span><div class="sdot green"></div></div>
+            <div class="cam-cell"><span>CAM 02</span><div class="sdot green"></div></div>
+            <div class="cam-cell"><span>CAM 03</span><div class="sdot orange"></div></div>
+            <div class="cam-cell"><span>CAM 04</span><div class="sdot green"></div></div>
+          </div>
+          <div class="monitor-foot">4 Cameras Active &nbsp;|&nbsp; <span id="mTime">--:--:--</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-hd">
+      <span class="sec-tag">Testimonials</span>
+      <h2>What Our <span class="grad-text">Clients Say</span></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="glass-card testi-card"><div class="stars">★★★★★</div><p>"FlornHub transformed our warehouse security. The 4K cameras caught a theft attempt that saved us thousands."</p><div class="testi-by"><strong>Marcus T.</strong><span>Warehouse Manager</span></div></div>
+      <div class="glass-card testi-card"><div class="stars">★★★★★</div><p>"Exceptional service. The team was punctual, clean, and explained everything clearly. The remote monitoring app is incredible."</p><div class="testi-by"><strong>Sarah K.</strong><span>Homeowner, Tandag City</span></div></div>
+      <div class="glass-card testi-card"><div class="stars">★★★★★</div><p>"We've had FlornHub secure 3 of our retail branches. Their access control integration with our POS is seamless."</p><div class="testi-by"><strong>David L.</strong><span>Retail Chain Owner</span></div></div>
+    </div>
+  </div>
+
+  <div class="cta-band">
+    <div class="glass-card cta-inner">
+      <h2>Ready to Secure Your Property?</h2>
+      <p>Book an assessment from our security experts today.</p>
+      <button class="btn-primary lg" onclick="openBookingModal()"><i class="fas fa-calendar-plus"></i> Book Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="page-about" class="page">
+  <div class="page-banner"><h1>About <span class="grad-text">FlornHub</span></h1><p>Trusted security professionals since 2022</p></div>
+  <div class="section">
+    <div class="about-grid">
+      <div class="about-txt">
+        <span class="sec-tag">Our Story</span>
+        <h2>Redefining <span class="grad-text">Security Standards</span></h2>
+        <p>Started on 2022, FlornHub began as a small team of passionate security technicians with one mission: make professional-grade security accessible to every Filipino home and business.</p>
+        <p>Today, we are one among the most trusted CCTV and security system providers in the region, with over 500+ successful installations across residential, commercial, and industrial clients.</p>
+        <p>Every member of our team is certified, background-checked, and committed to delivering solutions that genuinely work — because your peace of mind depends on it.</p>
+        <div class="about-stats">
+          <div class="glass-card a-stat"><span>500+</span><small>Installations</small></div>
+          <div class="glass-card a-stat"><span>4+</span><small>Years Active</small></div>
+          <div class="glass-card a-stat"><span>12</span><small>Tech Staff</small></div>
+          <div class="glass-card a-stat"><span>98%</span><small>Satisfaction</small></div>
+        </div>
+      </div>
+      <div class="glass-card about-img-ph"><i class="fas fa-shield-alt"></i><span>FlornHub HQ</span></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="sec-hd"><span class="sec-tag">Our Team</span><h2>Meet the <span class="grad-text">Expert</span></h2></div>
+    <div class="team-grid">
+      <div class="glass-card team-card"><div class="team-av"><i class="fas fa-user-tie"></i></div><h4>Florito Lagua</h4><span>Business Owner &amp; Founder</span><p>10+ years in security systems engineering</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="page-services" class="page">
+  <div class="page-banner"><h1>Our <span class="grad-text">Services</span></h1><p>Comprehensive security solutions for every need</p></div>
+  <div class="section">
+    <div class="svc-full-list">
+      <div class="glass-card svc-full"><div class="svc-ico-lg"><i class="fas fa-camera"></i></div><div class="svc-body"><h3>CCTV Installation</h3><p>Complete CCTV design, supply, and professional installation. We assess your property and recommend optimal camera placements with 4K, PTZ, and wide-angle options.</p><ul><li><i class="fas fa-check-circle"></i> Indoor &amp; outdoor cameras</li><li><i class="fas fa-check-circle"></i> 4K / 1080p HD options</li><li><i class="fas fa-check-circle"></i> Weatherproof IP66+ rated</li><li><i class="fas fa-check-circle"></i> 1–128 camera systems</li></ul><button class="btn-primary sm" onclick="openBookingModal()">Book Now</button></div></div>
+      <div class="glass-card svc-full"><div class="svc-ico-lg"><i class="fas fa-server"></i></div><div class="svc-body"><h3>NVR / DVR Systems</h3><p>Enterprise-grade recorders with cloud backup, up to 90 days storage, AI motion indexing, and encrypted remote access from any device.</p><ul><li><i class="fas fa-check-circle"></i> Up to 16TB local storage</li><li><i class="fas fa-check-circle"></i> Cloud backup integration</li><li><i class="fas fa-check-circle"></i> AI motion search</li><li><i class="fas fa-check-circle"></i> Remote live &amp; playback</li></ul><button class="btn-primary sm" onclick="openBookingModal()">Book Now</button></div></div>
+      <div class="glass-card svc-full"><div class="svc-ico-lg"><i class="fas fa-fingerprint"></i></div><div class="svc-body"><h3>Access Control</h3><p>Biometric fingerprint, facial recognition, RFID card, and PIN-based access systems with a unified management platform.</p><ul><li><i class="fas fa-check-circle"></i> Biometric readers</li><li><i class="fas fa-check-circle"></i> Multi-door management</li><li><i class="fas fa-check-circle"></i> Time &amp; attendance logs</li><li><i class="fas fa-check-circle"></i> HR system integration</li></ul><button class="btn-primary sm" onclick="openBookingModal()">Book Now</button></div></div>
+      <div class="glass-card svc-full"><div class="svc-ico-lg"><i class="fas fa-exclamation-triangle"></i></div><div class="svc-body"><h3>Intrusion Alarm Systems</h3><p>Smart burglar alarms with instant notifications, pet-immune PIR sensors, and zone-based detection.</p><ul><li><i class="fas fa-check-circle"></i> Zone-based detection</li><li><i class="fas fa-check-circle"></i> GSM &amp; VoIP alerts</li><li><i class="fas fa-check-circle"></i> Pet-immune sensors</li><li><i class="fas fa-check-circle"></i> Panic buttons &amp; sirens</li></ul><button class="btn-primary sm" onclick="openBookingModal()">Book Now</button></div></div>
+      <div class="glass-card svc-full"><div class="svc-ico-lg"><i class="fas fa-mobile-alt"></i></div><div class="svc-body"><h3>Remote Monitoring</h3><p>Live view from anywhere via our secure mobile and web app. Instant push notifications on motion, alerts, and system events.</p><ul><li><i class="fas fa-check-circle"></i> iOS &amp; Android apps</li><li><i class="fas fa-check-circle"></i> End-to-end encryption</li><li><i class="fas fa-check-circle"></i> Multi-site management</li><li><i class="fas fa-check-circle"></i> Live + recorded access</li></ul><button class="btn-primary sm" onclick="openBookingModal()">Book Now</button></div></div>
+      <div class="glass-card svc-full"><div class="svc-ico-lg"><i class="fas fa-wrench"></i></div><div class="svc-body"><h3>Maintenance &amp; Support</h3><p>Annual maintenance contracts, emergency callouts, camera cleaning, firmware updates, and full system health checks.</p><ul><li><i class="fas fa-check-circle"></i> Annual service plans</li><li><i class="fas fa-check-circle"></i> 4-hour emergency response</li><li><i class="fas fa-check-circle"></i> Preventive maintenance</li><li><i class="fas fa-check-circle"></i> Firmware &amp; software updates</li></ul><button class="btn-primary sm" onclick="openBookingModal()">Book Now</button></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="page-products" class="page">
+  <div class="page-banner"><h1>Our <span class="grad-text">Products</span></h1><p>Premium security equipment — prices in Philippine Peso</p></div>
+  <div class="section">
+    <div class="prod-filter" id="prodFilter"></div>
+    <div id="productsGrid" class="prod-grid"></div>
+    <div id="noProds" class="no-prods hidden"><i class="fas fa-box-open"></i><p>No products in this category yet.</p></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="page-contact" class="page">
+  <div class="page-banner"><h1>Contact <span class="grad-text">Us</span></h1><p>We're here to help you stay secure</p></div>
+  <div class="section">
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <div class="c-item glass-card"><div class="c-ico"><i class="fas fa-envelope"></i></div><div><strong>Email Us</strong><a href="mailto:floritolagua4@gmail.com">floritolagua4@gmail.com</a></div></div>
+        <div class="c-item glass-card"><div class="c-ico"><i class="fas fa-phone-alt"></i></div><div><strong>Call Us</strong><a href="tel:+639197126284">+639197126284</a></div></div>
+        <div class="c-item glass-card"><div class="c-ico"><i class="fab fa-facebook-messenger"></i></div><div><strong>Facebook Messenger</strong><a href="https://web.facebook.com/florito.lagua?_rdc=1&_rdr#" target="_blank">Florito Lagua</a></div></div>
+        <div class="c-item glass-card"><div class="c-ico"><i class="fas fa-map-marker-alt"></i></div><div><strong>Location</strong><span>Poblaction, San Miguel Surigao del Sur, Philippines</span></div></div>
+        <div class="c-item glass-card"><div class="c-ico"><i class="fas fa-clock"></i></div><div><strong>Business Hours</strong><span>Mon–Sat: 8:00 AM – 6:00 PM</span></div></div>
+      </div>
+      <div class="glass-card contact-form-wrap">
+        <h3>Send a Message</h3>
+        <form id="contactForm" onsubmit="submitContact(event)">
+          <div class="f-row">
+            <div class="f-grp"><label>Your Name</label><input type="text" id="cName" placeholder="Full Name" required/></div>
+            <div class="f-grp"><label>Email Address</label><input type="email" id="cEmail" placeholder="Email" required/></div>
+          </div>
+          <div class="f-grp"><label>Subject</label><input type="text" id="cSubject" placeholder="How can we help?" required/></div>
+          <div class="f-grp"><label>Message</label><textarea id="cMessage" rows="5" placeholder="Tell us about your security needs..." required></textarea></div>
+          <button type="submit" class="btn-primary full"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="page-faq" class="page">
+  <div class="page-banner"><h1>Frequently Asked <span class="grad-text">Questions</span></h1><p>Everything you need to know</p></div>
+  <div class="section">
+    <div class="faq-wrap">
+      <div class="glass-card faq-item"><button class="faq-q" onclick="toggleFaq(this)">How long does a typical CCTV installation take? <i class="fas fa-chevron-down"></i></button><div class="faq-a"><p>A standard residential installation (4–8 cameras) takes 4–6 hours. Larger commercial systems may take 1–3 days.</p></div></div>
+      <div class="glass-card faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you offer a warranty on your installations? <i class="fas fa-chevron-down"></i></button><div class="faq-a"><p>Yes! All installations include a 2-year labor warranty plus the manufacturer's product warranty (3–5 years). Annual maintenance plans are also available.</p></div></div>
+      <div class="glass-card faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I view my cameras remotely on my phone? <i class="fas fa-chevron-down"></i></button><div class="faq-a"><p>Absolutely. All systems include mobile app access (iOS and Android) for live feeds, playback, motion alerts, and full remote control.</p></div></div>
+      <div class="glass-card faq-item"><button class="faq-q" onclick="toggleFaq(this)">What's the difference between DVR and NVR systems? <i class="fas fa-chevron-down"></i></button><div class="faq-a"><p>DVR uses analog cameras via coaxial cable. NVR uses IP cameras over ethernet/WiFi with higher resolution and flexible placement. We recommend NVR for new installations.</p></div></div>
+      <div class="glass-card faq-item"><button class="faq-q" onclick="toggleFaq(this)">How much does a CCTV system cost in the Philippines? <i class="fas fa-chevron-down"></i></button><div class="faq-a"><p>A basic 4-camera home system starts from ₱15,000 installed. Commercial systems are quoted individually. Book a free consultation for an accurate quote.</p></div></div>
+      <div class="glass-card faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you service areas outside Metro Manila? <i class="fas fa-chevron-down"></i></button><div class="faq-a"><p>Yes, we cover a wide area across the Philippines. Travel fees may apply for distant locations. Contact us to confirm coverage.</p></div></div>
+      <div class="glass-card faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is my footage stored securely? <i class="fas fa-chevron-down"></i></button><div class="faq-a"><p>All local recordings are stored on encrypted HDDs/SSDs. Cloud backup options use AES-256 encryption. Only authorized users can access your footage.</p></div></div>
+      <div class="glass-card faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can you integrate CCTV with my existing alarm system? <i class="fas fa-chevron-down"></i></button><div class="faq-a"><p>In most cases yes. Our technicians will assess your current setup and recommend the best integration approach. We support most major alarm brands.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVACY -->
+<section id="page-privacy" class="page">
+  <div class="page-banner"><h1>Privacy <span class="grad-text">Policy</span></h1><p>Last updated: February 2026</p></div>
+  <div class="section"><div class="legal glass-card">
+    <h3>1. Information We Collect</h3><p>We collect information you provide when booking services or contacting us — including name, email, phone number, and property details.</p>
+    <h3>2. How We Use Your Information</h3><p>We use your information to process bookings, respond to inquiries, and comply with legal obligations. We do not sell your personal information.</p>
+    <h3>3. Data Security</h3><p>Booking inquiries are sent directly to our secure business email. We implement SSL encryption and access controls to protect your data.</p>
+    <h3>4. Cookies</h3><p>We use cookies to enhance your experience. You can control cookie settings through your browser.</p>
+    <h3>5. Your Rights</h3><p>You may request access, correction, or deletion of your personal data by contacting floritolagua4@gmail.com.</p>
+    <h3>6. Contact</h3><p>For privacy inquiries, email floritolagua4@gmail.com.</p>
+  </div></div>
+</section>
+
+<!-- TERMS -->
+<section id="page-terms" class="page">
+  <div class="page-banner"><h1>Terms of <span class="grad-text">Service</span></h1><p>Last updated: February 2026</p></div>
+  <div class="section"><div class="legal glass-card">
+    <h3>1. Acceptance of Terms</h3><p>By using FlornHub's services, you agree to these Terms of Service.</p>
+    <h3>2. Services</h3><p>FlornHub provides CCTV installation, security system setup, maintenance, and related services in the Philippines.</p>
+    <h3>3. Payment</h3><p>All prices are in Philippine Pesos (₱). A deposit may be required for large installations. Invoices are due within 14 days unless otherwise agreed.</p>
+    <h3>4. Warranty &amp; Liability</h3><p>We warrant installation work for 2 years. Product warranties are subject to manufacturer terms.</p>
+    <h3>5. Customer Obligations</h3><p>Customers must provide safe access to the installation site and comply with all applicable Philippine laws regarding surveillance and recording.</p>
+    <h3>6. Governing Law</h3><p>These terms are governed by the laws of the Republic of the Philippines.</p>
+  </div></div>
+</section>
+
+</main>
+
+<!-- BOOKING MODAL -->
+<div id="bookModal" class="modal-backdrop" onclick="closeModalOutside(event)">
+  <div class="modal-glass" id="modalBox">
+    <button class="modal-x" onclick="closeBookingModal()"><i class="fas fa-times"></i></button>
+    <!-- Step 1: Form -->
+    <div id="modalStep1">
+      <div class="modal-head">
+        <div class="modal-ico"><i class="fas fa-calendar-check"></i></div>
+        <h2>Book an Installation</h2>
+        <p>Fill in the details and we'll contact you within 24 hours</p>
+      </div>
+      <form id="bookForm" onsubmit="submitBooking(event)" class="book-form">
+        <div class="f-row">
+          <div class="f-grp"><label>Full Name *</label><input type="text" id="bkName" required/></div>
+          <div class="f-grp"><label>Email Address *</label><input type="email" id="bkEmail" required/></div>
+        </div>
+        <div class="f-row">
+          <div class="f-grp"><label>Phone Number *</label><input type="tel" id="bkPhone" required/></div>
+          <div class="f-grp"><label>Preferred Date *</label><input type="date" id="bkDate" required/></div>
+        </div>
+        <div class="f-row">
+          <div class="f-grp">
+            <label>Service Type *</label>
+            <select id="bkService" required>
+              <option value="">Select service...</option>
+              <option>CCTV Installation</option>
+              <option>NVR / DVR Setup</option>
+              <option>Access Control</option>
+              <option>Alarm System</option>
+              <option>Remote Monitoring Setup</option>
+              <option>Maintenance &amp; Repair</option>
+              <option>Free Consultation</option>
+            </select>
+          </div>
+          <div class="f-grp">
+            <label>Property Type</label>
+            <select id="bkProperty">
+              <option value="">Select type...</option>
+              <option>Residential – House</option>
+              <option>Residential – Apartment / Condo</option>
+              <option>Commercial – Office</option>
+              <option>Commercial – Retail / Store</option>
+              <option>Industrial / Warehouse</option>
+              <option>School / Institution</option>
+            </select>
+          </div>
+        </div>
+        <div class="f-grp"><label>Complete Address</label><input type="text" id="bkAddress" placeholder="Street, Barangay, City, Province"/></div>
+        <div class="f-grp"><label>Additional Notes</label><textarea id="bkNotes" rows="3" placeholder="Number of cameras, existing equipment, special requirements..."></textarea></div>
+        <div id="bkErr" class="f-err hidden"></div>
+        <button type="submit" class="btn-primary full lg" id="bkSubmitBtn"><i class="fas fa-paper-plane"></i> Submit Booking Request</button>
+      </form>
+    </div>
+    <!-- Step 2: Success -->
+    <div id="modalStep2" class="hidden">
+      <div class="modal-success">
+        <div class="success-ico"><i class="fas fa-check-circle"></i></div>
+        <h2>Booking Submitted!</h2>
+        <p>Thank you! Your booking has been received. We'll contact you within <strong>24 hours</strong> to confirm your appointment.</p>
+        <div class="booking-ref" id="bookRef"></div>
+        <button class="btn-primary" onclick="closeBookingModal()"><i class="fas fa-home"></i> Back to Website</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="toast hidden"></div>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-glass">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="foot-logo">
+          <svg width="30" height="30" viewBox="0 0 38 38" fill="none">
+            <circle cx="19" cy="19" r="17" stroke="url(#flg)" stroke-width="2"/>
+            <circle cx="19" cy="19" r="4" fill="url(#flg)"/>
+            <defs><linearGradient id="flg" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#0057ff"/><stop offset="100%" stop-color="#00c6ff"/></linearGradient></defs>
+          </svg>
+          <span>Florn<span class="grad-text">Hub</span></span>
+        </div>
+        <p>Advanced CCTV &amp; Security Solutions. Protecting Filipino homes and businesses since 2022.</p>
+        <div class="foot-social">
+          <a href="https://web.facebook.com/florito.lagua?_rdc=1&_rdr#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/flornhub" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://web.facebook.com/florito.lagua?_rdc=1&_rdr#" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+          <a href="https://www.youtube.com/@FloritoLagua" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="foot-links"><h4>Company</h4><ul>
+        <li><a href="#" onclick="showPage('home')">Home</a></li>
+        <li><a href="#" onclick="showPage('about')">About Us</a></li>
+        <li><a href="#" onclick="showPage('services')">Services</a></li>
+        <li><a href="#" onclick="showPage('products')">Products</a></li>
+      </ul></div>
+      <div class="foot-links"><h4>Support</h4><ul>
+        <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        <li><a href="#" onclick="showPage('faq')">FAQ</a></li>
+        <li><a href="#" onclick="showPage('privacy')">Privacy Policy</a></li>
+        <li><a href="#" onclick="showPage('terms')">Terms of Service</a></li>
+      </ul></div>
+      <div class="foot-contact"><h4>Contact</h4>
+        <p><a href="mailto:floritolagua4@gmail.com"><i class="fas fa-envelope"></i> floritolagua4@gmail.com</a></p>
+        <p><a href="tel:+639197126284"><i class="fas fa-phone"></i> +639197126284</a></p>
+        <p><a href="https://web.facebook.com/florito.lagua?_rdc=1&_rdr#" target="_blank"><i class="fab fa-facebook-messenger"></i> m.me/flornhub</a></p>
+        <p><a href="https://www.google.com/maps/place/8%C2%B055'57.2%22N+126%C2%B002'24.7%22E/@8.9325673,126.0395543,189m/data=!3m2!1e3!4b1!4m13!1m8!3m7!1s0x3302226f046ed96b:0x617f4e2667357222!2sPoblacion,+San+Miguel,+Surigao+del+Sur,+Philippines!3b1!8m2!3d8.9317594!4d126.0295261!16s%2Fg%2F11gbfd83cg!3m3!8m2!3d8.932566!4d126.040198?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D"><i class="fas fa-map-marker-alt"></i> Poblacion San Miguel, Philippines</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 FlornHub Security Solutions. All rights reserved.</p>
+      <div class="foot-btm-links">
+        <a href="#" onclick="showPage('privacy')">Privacy</a>
+        <a href="#" onclick="showPage('terms')">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
