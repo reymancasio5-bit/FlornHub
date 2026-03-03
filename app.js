@@ -10,13 +10,13 @@
 // ╚══════════════════════════════════════════════════════╝
 const CONFIG = {
   // ── Contact & booking email recipient ──────────────
-  BOOKING_EMAIL:  'reymancasio.5@gmail.com',
-  CONTACT_EMAIL:  'reymancasio.5@gmail.com',
+  BOOKING_EMAIL:  'floritolagua4@gmail.com',
+  CONTACT_EMAIL:  'floritolagua4@gmail.com',
 
   // ── Contact details (shown in footer & contact page) ─
-  PHONE:          '+63 9XX XXX XXXX',          // Change to your actual number
-  MESSENGER:      'https://m.me/flornhub',     // Change to your Facebook page
-  ADDRESS:        'Metro Manila, Philippines', // Change to your actual address
+  PHONE:          '+639197126284',          // Change to your actual number
+  MESSENGER:      'https://web.facebook.com/florito.lagua',     // Change to your Facebook page
+  ADDRESS:        'Poblacion, San Miguel Surigao del Sur, Philippines', // Change to your actual address
 
   // ── Currency ─────────────────────────────────────────
   CURRENCY_SYMBOL: '₱',
@@ -24,7 +24,7 @@ const CONFIG = {
 
   // ── Company ──────────────────────────────────────────
   COMPANY_NAME:   'FlornHub Security Solutions',
-  YEAR:           2025,
+  YEAR:           2026,
 };
 
 // ╔══════════════════════════════════════════════════════╗
